@@ -1,6 +1,7 @@
-.foot {
+:root {
   --accent-color: #10C9C3;
-  --primal-color: #212529;
+  --primary-color: #212529;
+  --light-color: #ffffff;
 }
 * {
   box-sizing: border-box;
@@ -31,7 +32,7 @@ body {
   align-items: center;
   height: 100%;
 }
-.mian_block{
+.main_block{
   width: 50%;
   min-height: 500px;
   display: flex;
@@ -42,7 +43,7 @@ body {
 .main_heading {
    font-weight: 500;
    font-size: 32px;
-   color: var(--primal-color);
+   color: var(--primary-color);
 }
 .main_text {
   font-family: "Nunito Sans", sans-serif;
