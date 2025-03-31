@@ -1,10 +1,11 @@
 .foot {
   --accent-color: #10C9C3;
   --primal-color: #212529;
-  --light-color
 }
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
     margin: 0;
@@ -13,8 +14,6 @@ body {
 }
 .h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  padding: 0;
-  margin: 0;
 }
 .container {
     border: 2px solid black;
@@ -34,6 +33,11 @@ body {
 }
 .mian_block{
   width: 50%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
 }
 .main_heading {
    font-weight: 500;
@@ -53,6 +57,30 @@ body {
     font-weight: 400;
     background: var(--accent-color);
     border: none;
-    color: var();
+    color: var(--light-color);
     border-radius: 4px;
+}
+
+.about {
+   padding: 100px 0;
+}
+.about_wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 24px;
+}
+.about_heading {
+   font-weight: 500;
+   font-size: 32px;
+}
+.about_text {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+}
+.about_img {
+   border: 1px solid black;
+   width: 200px;
 }
